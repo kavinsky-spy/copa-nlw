@@ -12,7 +12,7 @@ async function bootstrap() {
     })
 
     await fastify.register(cors, {
-        origin: 'true'
+        origin: true,
     })
 
     fastify.get('/pools/count', async () => {
